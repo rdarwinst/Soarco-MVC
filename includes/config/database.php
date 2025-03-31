@@ -11,10 +11,10 @@ function conectarDB(): mysqli
 
     $db->set_charset('utf8');
 
-    if (!$db) {
+    if ($db->connect_error) {
         echo "Error: No se pudo conectar a MySQL.";
-        echo "errno de depuración: " . mysqli_connect_errno();
-        echo "error de depuración: " . mysqli_connect_error();
+        echo "errno de depuración: " . $db->connect_errno;
+        echo "error de depuración: " . $db->connect_error;
         exit;
     }
 
