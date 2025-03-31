@@ -1,0 +1,35 @@
+$negro: #0d0d0d;
+$rojo: #C21E24;
+$gris: #EEF0F2;
+
+// Reescribir Colores
+$dark: $negro;
+$danger: $rojo;
+$light: $gris;
+
+// Tipografías
+$fuente-principal: "Montserrat", serif;
+$fuente-headings: "Bebas Neue", serif;
+
+$font-size-root: 62.5%;
+$font-size-base: 1.8rem;
+$h1-font-size: 4.5rem;
+$h2-font-size: 3.8rem;
+
+$headings-font-family: $fuente-headings;
+$font-family-base: $fuente-principal;
+
+// Navegacion
+$navbar-dark-color: $light;
+$nav-pills-link-active-bg: $dark;
+
+// Forms
+$form-label-font-size: 1.6rem;
+$input-padding-y: .8rem;
+
+// Toast
+$toast-font-size: 1.6rem;
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");

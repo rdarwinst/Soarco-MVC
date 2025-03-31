@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+body {
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.ayuda {
+    
+    .whatsapp-button {
+        display: grid;
+        place-items: center;
+    }
+}

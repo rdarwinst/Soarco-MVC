@@ -1,0 +1,56 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.webp .banner-nosotros {
+    @include m.bgImage($dark, '../img/nosotros-banner.webp');
+}
+
+.no-webp .banner-nosotros {
+    @include m.bgImage($dark, '../img/nosotros-banner.jpg');
+}
+
+.banner-nosotros {
+    height: 40rem;
+
+    @include media-breakpoint-up(lg) {
+        height: 100vh;
+        max-height: 90rem;
+    }
+}
+
+.mision,
+.vision {
+    img {
+        width: 100%;
+        height: auto
+    }
+}
+
+.mision h2,
+.historia h1 {
+    @include m.txtSubrayado($dark, $danger);
+    margin-top: 2rem
+}
+
+.vision {
+    h2 {
+        @include m.txtSubrayado($dark, $white);
+        margin-top: 2rem
+    }
+}
+
+.valores {
+    h2 {
+        @include m.txtSubrayado($dark, $white);
+    }
+}
+
+.fundador {
+    h2 {
+        @include m.txtSubrayado($dark, $danger);
+    }
+
+    img {
+        width: 100%;
+    }
+}

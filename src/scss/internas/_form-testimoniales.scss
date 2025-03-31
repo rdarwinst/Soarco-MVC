@@ -1,0 +1,25 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.webp .banner-testimoniales {
+    @include m.bgImage($dark, '../img/testimoniales.webp');
+}
+
+.no-webp .banner-testimoniales {
+    @include m.bgImage($dark, '../img/testimoniales.jpg');
+}
+
+.banner-testimoniales {
+    height: 40rem;
+    
+    @include media-breakpoint-up(md) {
+        height: 100vh;
+        max-height: 90rem;
+    }
+}
+
+.form-testimoniales {
+    h1 {
+        @include m.txtSubrayado($dark, $danger);
+    }
+}

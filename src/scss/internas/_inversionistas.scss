@@ -1,0 +1,9 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.inversionistas {
+
+    h3 {
+        @include m.txtSubrayado($dark, $danger);
+    }
+}

@@ -1,0 +1,30 @@
+@use '../custom' as *;
+
+.proyecto {
+
+    .portada {
+
+        img {
+            width: 100%;
+            height: auto;            
+            object-fit: cover;
+        }
+    }
+
+    .tab-pane {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .nav-link {
+        &.active {
+            font-weight: 700;
+        }
+
+        color: $dark;
+    }
+
+}

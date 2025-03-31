@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.administracion {
+    h2 {
+        @include m.txtSubrayado($dark, $danger);
+    }
+}
+
+.form {
+
+    &-proyecto,
+    &-equipo,
+    &-imagenes {
+        h1 {
+            @include m.txtSubrayado($dark, $danger);
+        }
+    }
+}

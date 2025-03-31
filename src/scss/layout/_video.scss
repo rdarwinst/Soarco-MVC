@@ -1,0 +1,26 @@
+@use '../custom' as *;
+
+.video {
+    position: relative;
+    min-height: 50rem;
+    max-height: 70rem;
+    overflow: hidden;
+
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: transparentize($dark, .4);
+        z-index: 1;
+
+    }
+
+    video {
+        display: block;
+        width: auto;
+
+        @include media-breakpoint-up(lg) {
+            width: 100%;
+        }
+    }
+}

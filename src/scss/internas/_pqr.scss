@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.webp .banner-pqr {
+    @include m.bgImage($dark, '../img/pqr.webp');
+}
+
+.no-webp .banner-pqr {
+    @include m.bgImage($dark, '../img/pqr.jpg');
+}
+
+.banner-pqr {
+    height: 40rem;
+
+    @include media-breakpoint-up(lg) {
+        height: 100vh;
+        max-height: 90rem;
+    }
+}
