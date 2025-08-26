@@ -67,14 +67,14 @@ class Admin extends ActiveRecord
     public function autenticar()
     {
         if (session_status() === PHP_SESSION_NONE) {
-            session_start();      
-
-            $_SESSION['email'] = $this->email;
-
-            $_SESSION['login'] = true;
-
-            header('Location: /admin');
-            exit;
+            session_start();
         }
+
+        $_SESSION['email'] = $this->email;
+
+        $_SESSION['login'] = true;
+
+        header('Location: /admin');
+        exit;
     }
 }

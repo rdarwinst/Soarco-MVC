@@ -3,3 +3,4 @@ node_modules/
 includes/.env
 public/build
 public/uploads
+usuarios.php
