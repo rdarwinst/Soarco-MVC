@@ -25,7 +25,7 @@ $auth = $_SESSION['login'] ?? false;
     <link rel="prefetch" href="../build/js/bundle.min.js">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <header class="header bg-dark py-3 py-md-5">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -102,7 +102,7 @@ $auth = $_SESSION['login'] ?? false;
             </div>
         </nav>
     </header>
-    <div class="position-fixed top-50 end-0 me-3 z-2 d-flex flex-column gap-4 ayuda">
+    <div class="position-fixed top-50 end-0 me-3 d-flex flex-column gap-4 ayuda">
         <a href="https://wa.link/jxc2g3" target="_blank" class="btn btn-lg btn-success rounded-circle d-flex justify-content-center align-items-center" style="height: 50; width: 50;"><i class="bi bi-whatsapp"></i></a>
         <button type="button" data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-lg btn-danger rounded-circle d-flex justify-content-center align-items-center" style="height: 50; width: 50;"><i class="bi bi-patch-question"></i></button>
     </div>
@@ -170,7 +170,7 @@ $auth = $_SESSION['login'] ?? false;
 
     <?php echo $contenido; ?>
 
-    <footer class="footer bg-dark py-5">
+    <footer class="footer bg-dark py-5 mt-auto">
         <div class="container-xl">
             <div class="row align-items-start text-center text-md-start">
                 <nav class="col-md-3 mt-4 mt-md-0 d-grid gap-2">

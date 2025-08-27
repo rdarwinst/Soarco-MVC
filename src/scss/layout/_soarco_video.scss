@@ -1,0 +1,8 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.soarco-video {
+    h2 {
+        @include m.txtSubrayado($dark, $danger);
+    }
+}

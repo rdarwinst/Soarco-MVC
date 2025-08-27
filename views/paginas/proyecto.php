@@ -27,7 +27,7 @@
 
             <div class="my-3 informacion">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="precio">Desde: $<?php echo s(number_format($proyecto->precio, 2, ',', '.')); ?></h3>
+                    <h3 class="opacity-0 visually-hidden">Desde: $<?php echo s(number_format($proyecto->precio, 2, ',', '.')); ?></h3>
                     <h4 class="fs-4"><?php echo s($proyecto->ubicacion); ?></h4>
                 </div>
 

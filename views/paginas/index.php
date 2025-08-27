@@ -16,14 +16,37 @@
     </video>
 </section>
 
-<main class="container-xl py-5 proyectos" id="proyectos">
-    <h1>Proyectos en Ejecución</h1>
+<main class="flex-fill py-5 proyectos bg-light" id="proyectos">
+    <div class="container-xl">
+        <h1>Proyectos en Ejecución</h1>
 
-    <?php include __DIR__ . '/listado.php'; ?>
+        <?php include __DIR__ . '/listado.php'; ?>
 
-    <a href="/proyectos" class="btn btn-outline-dark my-4 p-3 fw-bold text-uppercase d-block d-md-inline-block">Ver más
-        proyectos</a>
+        <a href="/proyectos" class="btn btn-outline-dark my-4 p-3 fw-bold text-uppercase d-block d-md-inline-block">Ver más
+            proyectos</a>
+    </div>
+
 </main>
+
+<div class="noticias py-2 bg-dark text-white sticky-top">
+    <marquee class="m-0 p-0"><b>Próximo lanzamiento: </b>Cumbres del Fonse en San Gil. Un proyecto inmobiliario de rentas cortas.</marquee>
+</div>
+
+<div class="soarco-video py-5">
+    <div class="container-xl">
+        <h2>Descubre lo que estamos construyendo</h2>
+        <p>Un vistazo a la innovación y compromiso que ponemos en cada proyecto.</p>
+        <div class="row ">
+            <div class="col-12 my-3">
+                <video autoplay muted controls class="ratio ratio-16x9">
+                    <source src="video/soarco.mp4" type="video/mp4">
+                    <source src="video/soarco.ogv" type="video/ogg">
+                    <source src="video/soarco.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="nosotros bg-light">
     <div class="container-xl">
@@ -55,24 +78,26 @@
     </div>
 </section>
 
-<section class="py-5 container-xl testimoniales">
-    <div class="row align-items-center">
-        <div class="col-md-4 order-2 order-md-1">
-            <img loading="lazy" width="200" height="300" src="/build/img/opinion.svg" alt="Imagen Testimoniales"
-                class="img-fluid">
-        </div>
-        <div class="col-md-8 order-1 order-md-2">
-            <h2 class="mt-5">Experiencias de nuestros clientes</h2>
-            <div class="row mt-5">        
-                <?php foreach ($testimonios as $index => $testimonio): ?>
-                    <?php $offset = $offsets[$index % 3]; ?>                    
-                    <div class="col-md-6 mb-2 offset-md-<?php echo $offset; ?>">
-                        <div class="testimonial bg-dark">
-                            <blockquote class="text-white"><?php echo s($testimonio->testimonio); ?></blockquote>
-                            <p class="text-end fst-italic text-white"> - <?php echo s($testimonio->nombre) . " " . s($testimonio->apellido); ?></p>
+<section class="py-5 testimoniales">
+    <div class="container-xl">
+        <div class="row align-items-center">
+            <div class="col-md-4 order-2 order-md-1">
+                <img loading="lazy" width="200" height="300" src="/build/img/opinion.svg" alt="Imagen Testimoniales"
+                    class="img-fluid">
+            </div>
+            <div class="col-md-8 order-1 order-md-2">
+                <h2 class="mt-5">Experiencias de nuestros clientes</h2>
+                <div class="row mt-5">
+                    <?php foreach ($testimonios as $index => $testimonio): ?>
+                        <?php $offset = $offsets[$index % 3]; ?>
+                        <div class="col-md-6 mb-2 offset-md-<?php echo $offset; ?>">
+                            <div class="testimonial bg-dark">
+                                <blockquote class="text-white"><?php echo s($testimonio->testimonio); ?></blockquote>
+                                <p class="text-end fst-italic text-white"> - <?php echo s($testimonio->nombre) . " " . s($testimonio->apellido); ?></p>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
     </div>
