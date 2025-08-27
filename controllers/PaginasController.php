@@ -59,8 +59,8 @@ class PaginasController
                     $mail->Username = $_ENV['EMAIL_USER'];
                     $mail->Password = $_ENV['EMAIL_PASS'];
 
-                    $mail->setFrom('no-reply@constructorasoarco.com', 'No-Reply');
-                    $mail->addAddress('admin@constructorasoraco.com');
+                    $mail->setFrom('gerenciageneral@constructorasoarco.com', 'No-Reply');
+                    $mail->addAddress('ventas1@constructorasoarco.com');
                     $mail->isHTML(true);
                     $mail->CharSet = 'UTF-8';
 
@@ -145,8 +145,8 @@ class PaginasController
                 $mail->Username = $_ENV['EMAIL_USER'];
                 $mail->Password = $_ENV['EMAIL_PASS'];
 
-                $mail->setFrom('no-reply@constructorasoarco.com', 'No-Reply');
-                $mail->addAddress('contacto@constructorasoraco.com');
+                $mail->setFrom('gerenciageneral@constructorasoarco.com', 'No-Reply');
+                $mail->addAddress('gerenciageneral@constructorasoarco.com');
                 $mail->isHTML(true);
                 $mail->CharSet = 'UTF-8';
 
@@ -220,8 +220,8 @@ class PaginasController
                 $mail->Username = $_ENV['EMAIL_USER'];
                 $mail->Password = $_ENV['EMAIL_PASS'];
 
-                $mail->setFrom('no-reply@constructorasoarco.com', 'No-Reply');
-                $mail->addAddress('contacto@constructorasoraco.com');
+                $mail->setFrom('gerenciageneral@constructorasoarco.com', 'No-Reply');
+                $mail->addAddress('gerenciageneral@constructorasoarco.com');
                 $mail->isHTML(true);
                 $mail->CharSet = 'UTF-8';
 

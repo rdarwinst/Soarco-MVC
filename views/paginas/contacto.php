@@ -87,8 +87,8 @@ $resultado = $_GET['enviado'] ?? null;
                 </li>
                 <li class="mb-3">
                     <h4>Correo Electrónico</h4>
-                    <a href="mailto:correo@constructorasoarco.com"
-                        class="text-decoration-none link-dark">correo@constructorasoarco.com</a>
+                    <a href="mailto:gerenciageneral@constructorasoarco.com"
+                        class="text-decoration-none link-dark">gerenciageneral@constructorasoarco.com</a>
                 </li>
                 <div class="mb-3">
                     <h4>WhatsApp</h4>

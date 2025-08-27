@@ -201,7 +201,7 @@ $auth = $_SESSION['login'] ?? false;
                     <div class="text-wrap" style="width: 6rem;">
 
                     </div>
-                    <a href="mailto:contacto@constructorasoarco.com" class="link-light text-break text-decoration-none">contacto@constructorasoarco.com</a>
+                    <a href="mailto:gerenciageneral@constructorasoarco.com" class="link-light text-break text-decoration-none">gerenciageneral@constructorasoarco.com</a>
                 </div>
 
             </div>
