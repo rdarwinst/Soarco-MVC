@@ -4,6 +4,7 @@ require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\ClientesController;
 use Controllers\EquipoController;
+use Controllers\LandingController;
 use Controllers\LoginController;
 use Controllers\PaginasController;
 use MVC\Router;
@@ -63,5 +64,6 @@ $router->post('/contacto', [PaginasController::class, 'contacto']);
 $router->get('/servicio-al-cliente', [PaginasController::class, 'servicio']);
 $router->post('/servicio-al-cliente', [PaginasController::class, 'servicio']);
 $router->get('/politica-de-privacidad', [PaginasController::class, 'politica_privacidad']);
+$router->get('/macondo', [LandingController::class, 'landing']);
 
 $router->comprobarRutas();
